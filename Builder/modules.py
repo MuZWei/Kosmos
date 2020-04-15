@@ -378,7 +378,6 @@ def download_sys_ftpd_light(module, temp_directory, kosmos_version, kosmos_build
     common.delete_path(bundle_path)
     if kosmos_build:
         common.delete_path(os.path.join(temp_directory, 'atmosphere', 'contents', '420000000000000E', 'flags', 'boot2.flag'))
-    common.copy_module_file('sys-ftpd-light', 'toolbox.json', os.path.join(temp_directory, 'atmosphere', 'contents', '420000000000000E', 'toolbox.json'))
 
     return release.tag_name
 
